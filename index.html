@@ -1,0 +1,62 @@
+<html>
+  <head>
+        <title> Parth</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script type="javascript.js"></script>
+  </head>
+  <body>   
+<button class="tablink" onclick="openPage('Home', this, '#073563')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, '#ff8928')">News</button>
+<button class="tablink" onclick="openPage('About', this, 'rgb(0,155,119)')">About</button>
+
+<div id="Home" class="tabcontent">
+  <span class="blink_img"><img src="C:\Users\parth\Desktop\HTML project\red.png" style="width:20px;" /></span>
+  <span id='one'>Live counting...</span>
+
+  <p>Home is where the heart is..</p>
+</div>
+<!------------------------------->
+<div id="News" class="tabcontent">
+  <h1 style="color: blue">Nakul the king</h1>
+  <p>Some news this fine day!</p> 
+</div>
+<!---------------------->
+<div id="About" class="tabcontent">
+  <h1>About</h1>
+  <p>Who we are and what we do.</p>
+</div>
+<footer>
+  You can connect me on<br>
+  <a href="">Youtube</a><br>
+  <a href="">Linkden</a><br>
+</footer>
+
+<!------------------------------------------------------------------------------------------->
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+    
+  </body>
+  
+  
+  
+  
+</html>
