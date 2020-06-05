@@ -1,0 +1,70 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #111;
+  color: white;
+  float: left;
+  border: 10px black;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.3333%;
+  height: 10%
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: #073563;}
+#News {background-color: #ff8928;}
+#About {background-color: rgb(0,155,119);}
+
+#one{
+  font-size: 150%;
+  color:white;
+  
+  clear: none;
+
+}
+
+footer{
+  display: block;
+  background-color: black;
+  color: white;
+  height: 20%
+}
+
+.blink_img {
+  animation: blinker 1s linear infinite;
+  padding-left: 40%
+
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+@keyframes blin {
+  50% { opacity: 0; }
+
+#News h1{
+  font-size: 150%;
+  color: #34fa67;
+  text-align: center;
+}
